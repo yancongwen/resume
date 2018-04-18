@@ -105,14 +105,16 @@ header>nav>ul>li>a:hover {
 
 .banner>.cover {
     height: 100%;
-    background-color: rgba(44, 51, 64, 0.8);
+    background-color: rgba(7, 14, 27, 0.8);
 }
 
 main {
     max-width: 930px;
-    margin: -345px auto 150px auto;
+    margin: -415px auto 200px auto;
 }
-
+.about{
+    padding-top: 70px;
+}
 .about>.card {
     background: #FFF;
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
