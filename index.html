@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="//at.alicdn.com/t/font_633848_jmcclknxdf3cjtt9.js"></script>
+    <title>Resume</title>
+</head>
+
+<body>
+    <header class="clearfix">
+        <a href="#" class="logo fl">
+            <span class="rs">RS</span>
+            <span>card</span>
+        </a>
+        <nav class="fr">
+            <ul class="clearfix">
+                <li class="fl">
+                    <a href="#">关于</a>
+                </li>
+                <li class="fl">
+                    <a href="#">技能</a>
+                </li>
+                <li class="fl">
+                    <a href="#">作品</a>
+                </li>
+                <li class="fl">
+                    <a href="#">博客</a>
+                </li>
+                <li class="fl">
+                    <a href="#">日历</a>
+                </li>
+                <li class="fl">
+                    <a href="#">联系方式</a>
+                </li>
+                <li class="fl">
+                    <a href="#">其他</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="banner">
+        <div class="cover"></div>
+    </div>
+
+    <main>
+        <section class="about">
+            <div class="card">
+                <div class="subject clearfix">
+                    <div class="left fl">
+                        <img src="img/avatar.jpg" width="299px" height="347px" alt="头像">
+                    </div>
+                    <div class="right fl">
+                        <span class="hello">HELLO</span>
+                        <h1 class="name">闫 从 文</h1>
+                        <h2 class="job">前端开发工程师</h2>
+                        <hr>
+                        <dl class="clearfix">
+                            <dt>年龄</dt>
+                            <dd>24</dd>
+                            <dt>学历</dt>
+                            <dd>本科</dd>
+                            <dt>城市</dt>
+                            <dd>北京</dd>
+                            <dt>QQ</dt>
+                            <dd>243030262</dd>
+                            <dt>手机</dt>
+                            <dd>16601124365</dd>
+                            <dt>邮箱</dt>
+                            <dd>ycwen1119@163.com</dd>
+                        </dl>
+                    </div>
+                </div>
+                <footer>
+                    <a href="#" target="_blank">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-github"></use>
+                        </svg>
+                    </a>
+                    <a href="#" target="_blank">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-weibo"></use>
+                        </svg>
+                    </a>
+                    <a href="#" target="_blank">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-googleplus"></use>
+                        </svg>
+                    </a>
+                    <a href="#" target="_blank">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-weixin"></use>
+                        </svg>
+                    </a>
+                    <a href="#" target="_blank">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-twitter"></use>
+                        </svg>
+                    </a>
+                </footer>
+            </div>
+
+            <p class="download">
+                <a href="resume.pdf" download="resume.pdf">下载电子简历</a>
+            </p>
+
+            <p class="readMe">Hello! I'm Robert Smith. Senior Web Developer specializing in front end development. Experienced with all stages
+                of the development cycle for dynamic web projects. Well-versed in numerous programming anguages including
+                JavaScript, SQL, and C. Stng background in project management and customer relations.</p>
+        </section>
+
+        <section class="skills">
+            <h2>技能</h2>
+            <ul class="clearfix">
+                <li>
+                    <span>HTML 5 & CSS 3</span>
+                    <div class="progressBar">
+                        <div class="progress" style="width: 80%"></div>
+                    </div>
+                </li>
+                <li>
+                    <span>JavaScript</span>
+                    <div class="progressBar">
+                        <div class="progress" style="width: 80%"></div>
+                    </div>
+                </li>
+                <li>
+                    <span>jQuery</span>
+                    <div class="progressBar">
+                        <div class="progress" style="width: 60%"></div>
+                    </div>
+                </li>
+                <li>
+                    <span>Vue</span>
+                    <div class="progressBar">
+                        <div class="progress" style="width: 60%"></div>
+                    </div>
+                </li>
+                <li>
+                    <span>React</span>
+                    <div class="progressBar">
+                        <div class="progress" style="width: 20%"></div>
+                    </div>
+                </li>
+                <li>
+                    <span>Node.js</span>
+                    <div class="progressBar">
+                        <div class="progress" style="width: 80%"></div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="portfolio">
+            <h2>作品集</h2>
+            <nav>
+                <ul class="clearfix">
+                    <li id="all">所有</li>
+                    <li id="frame">框架</li>
+                    <li id="native">原生</li>
+                </ul>
+                <div id="portfolioBar" class="navBar state-1">
+                    <div class="innerBar"></div>
+                </div>
+            </nav>
+            <div class="works clearfix">
+                <div class="left fl">
+                    <img src="img/work1.jpg" alt="work1">
+                </div>
+                <div class="right fr">
+                    <div class="top">
+                        <img src="img/work2.jpg" alt="work2">
+                    </div>
+                    <div class="bottom">
+                        <img src="img/work3.jpg" alt="img3">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>

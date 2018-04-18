@@ -1,0 +1,355 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #EFEFEF;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h7 {
+    font-weight: normal;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+hr {
+    height: 0;
+    border: none;
+    border-top: 1px solid #dedede;
+}
+
+.clearfix::after {
+    content: '\20';
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    margin: 20px 0;
+}
+
+header>.logo {
+    margin-left: 15px;
+    font-size: 30px;
+    font-family: 'Arial Black';
+    color: #9a9da2;
+}
+
+header>.logo>.rs {
+    margin-right: 3px;
+    color: #e8676b;
+}
+
+header>nav {
+    margin-right: 15px;
+}
+
+header>nav>ul>li {
+    margin: 0 15px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #C3C5C9;
+}
+
+header>nav>ul>li>a {
+    display: block;
+    padding: 10px 0;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+}
+
+header>nav>ul>li>a:hover {
+    border-bottom: 3px solid #e06567;
+}
+
+.banner {
+    height: 515px;
+    background-image: url(../img/banner.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.banner>.cover {
+    height: 100%;
+    background-color: rgba(44, 51, 64, 0.8);
+}
+
+main {
+    max-width: 930px;
+    margin: -345px auto 150px auto;
+}
+
+.about>.card {
+    background: #FFF;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+}
+
+.about .card .subject {
+    padding: 57px 50px 40px 50px;
+}
+
+.about .card .subject .right {
+    width: 470px;
+    margin-left: 60px;
+}
+
+.about .card .subject .right .hello {
+    display: inline-block;
+    position: relative;
+    padding: 7px 12px;
+    margin-bottom: 10px;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.1;
+    color: #fff;
+    background: #e06567;
+}
+
+.about .card .subject .right .hello::after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    bottom: -8px;
+    width: 8px;
+    border-left: 8px solid #e06567;
+    border-bottom: 8px solid transparent;
+}
+
+.about .card .subject .right .name {
+    margin-top: 18px;
+    font-size: 36px;
+    line-height: 1.1;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #3d4451;
+}
+
+.about .card .subject .right .job {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.1;
+    margin-bottom: 0;
+    color: #3d4451;
+}
+
+.about .card .subject .right hr {
+    margin: 20px 0;
+}
+
+.about .card .subject .right dl>dt,
+.about .card .subject .right dl>dd {
+    float: left;
+    padding: 5px 0;
+    line-height: 20px;
+}
+
+.about .card .subject .right dl>dt {
+    width: 30%;
+    color: #333333;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.about .card .subject .right dl>dd {
+    width: 70%;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #9da0a7;
+}
+
+.about .card footer {
+    background: #e06567;
+    text-align: center;
+}
+
+.about .card footer>a {
+    display: inline-block;
+    padding: 12px;
+    margin: 16px;
+    border-radius: 50%;
+}
+
+.about .card footer>a:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.about .card footer>a>svg {
+    width: 20px;
+    height: 20px;
+    fill: white;
+    vertical-align: top;
+}
+
+.about .download {
+    text-align: center;
+}
+
+.about .download>a {
+    display: inline-block;
+    margin: 32px 0;
+    padding: 20px 55px;
+    border: 1px solid #cdcfd1;
+    border-radius: 4px;
+    background: #efefef;
+    font-size: 14px;
+    line-height: 16px;
+    color: #3d4451;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    transition: box-shadow 0.5s;
+}
+
+.about .download>a:hover,
+.about .download>a:focus {
+    opacity: 0.95;
+    text-decoration: none;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+.about .readMe {
+    font-size: 20px;
+    font-style: normal;
+    text-align: center;
+    font-weight: 300;
+    font-family: "kai";
+    line-height: 1.8;
+}
+
+.skills,
+.portfolio {
+    padding-top: 70px;
+}
+
+.skills>h2,
+.portfolio>h2 {
+    text-align: center;
+    color: #3d4451;
+    font-size: 34px;
+    line-height: 1.2;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.skills>ul {
+    background: #fff;
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
+    padding: 42px 50px 10px;
+}
+
+.skills>ul>li {
+    float: left;
+    width: 48%;
+    box-sizing: border-box;
+}
+
+.skills>ul>li:nth-child(even) {
+    float: right;
+}
+
+.skills>ul>li>.progressBar {
+    height: 5px;
+    background: #FAE1E1;
+    border-radius: 2px;
+    margin: 4px 0 34px;
+}
+
+.skills>ul>li>.progressBar>.progress {
+    height: 100%;
+    background: #e8676b;
+    width: 70%;
+    border-radius: 2px;
+}
+
+.portfolio {
+    text-align: center;
+}
+
+.portfolio>nav {
+    display: inline-block;
+}
+
+.portfolio>nav>ul>li {
+    float: left;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0 12px;
+}
+
+.portfolio>nav>ul>li:nth-child(1) {
+    margin-right: 20px;
+    padding-left: 0;
+}
+
+.portfolio>nav>ul>li:nth-child(3) {
+    margin-left: 20px;
+    padding-right: 0;
+}
+
+.portfolio .navBar {
+    height: 5px;
+    margin-top: 15px;
+    margin-bottom: 28px;
+    border-radius: 5px;
+    background: #FFF;
+}
+
+.portfolio .navBar .innerBar {
+    height: 100%;
+    background: #e8676b;
+    border-radius: 5px;
+}
+
+.portfolio .navBar.state-1 .innerBar {
+    margin-left: 0;
+    width: 44px;
+}
+
+.portfolio .navBar.state-2 .innerBar {
+    margin-left: 63px;
+    width: 56px;
+}
+
+.portfolio .navBar.state-3 .innerBar {
+    margin-left: 140px;
+    width: 44px;
+}
+
+.portfolio .works .right .bottom {
+    margin-top: 16px;
+}
