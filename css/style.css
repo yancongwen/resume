@@ -4,6 +4,7 @@
 }
 
 body {
+    position: relative;
     background: #EFEFEF;
 }
 
@@ -60,10 +61,16 @@ header {
     position: fixed;
     width: 100%;
     margin: 20px 0;
+    padding: 10px 15px;
+    color: #C3C5C9;
 }
-
+header.sticky {
+    margin: 0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.19), 0 6px 10px rgba(0, 0, 0, 0.23);
+    background: #fff;
+    color: #3d4451;
+}
 header>.logo {
-    margin-left: 15px;
     font-size: 30px;
     font-family: 'Arial Black';
     color: #9a9da2;
@@ -82,7 +89,6 @@ header>nav>ul>li {
     margin: 0 15px;
     font-size: 12px;
     font-weight: bold;
-    color: #C3C5C9;
 }
 
 header>nav>ul>li>a {

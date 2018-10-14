@@ -1,0 +1,39 @@
+.loading {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: #eee;
+    z-index: 100;
+}
+
+.loading:before,
+.loading:after {
+    content: '';
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    background: #000;
+    opacity: 0;
+    animation: loading 2s linear infinite;
+}
+
+.loading:after {
+    animation-delay: 1s;
+}
+
+@keyframes loading {
+  0% {
+    width: 0px;
+    height: 0px;
+    opacity: 1;
+  }
+  100% {
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+  }
+}
