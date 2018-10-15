@@ -63,6 +63,8 @@ header {
     margin: 20px 0;
     padding: 10px 15px;
     color: #C3C5C9;
+    z-index: 1;
+    transition: all 0.5s;
 }
 header.sticky {
     margin: 0;
@@ -119,7 +121,8 @@ header>nav>ul>li>.submenu>li:hover {
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
     color: #e06567;
 }
-header>nav>ul>li.active:after {
+header>nav>ul>li.active:after,
+header>nav>ul>li.highlight:after {
     content: '';
     display: block;
     position: absolute;
@@ -161,6 +164,13 @@ header>nav>ul>li.active:after {
 main {
     max-width: 930px;
     margin: -415px auto 200px auto;
+}
+section {
+    transform: translateY(0);
+    transition: all 0.5s;
+}
+section.offset {
+    transform: translateY(100px);
 }
 .about{
     padding-top: 70px;
@@ -339,6 +349,7 @@ main {
     background: #FAE1E1;
     border-radius: 2px;
     margin: 4px 0 34px;
+    overflow: hidden;
 }
 
 .skills>ul>li>.progressBar>.progress {
@@ -346,6 +357,11 @@ main {
     background: #e8676b;
     width: 70%;
     border-radius: 2px;
+    transition: all 0.5s;
+    transform: translateX(0);
+}
+.skills.offset>ul>li>.progressBar>.progress {
+    transform: translateX(-100%);
 }
 
 .portfolio {
