@@ -1,20 +1,30 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     position: relative;
     background: #EFEFEF;
 }
-
+::-webkit-scrollbar {
+  display: inline-block;
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(224,101,103,0.5);
+  border-radius: 5px;
+}
 h1,
 h2,
 h3,
 h4,
 h5,
-h6,
-h7 {
+h6{
     font-weight: normal;
 }
 
@@ -170,7 +180,7 @@ section {
     transition: all 0.5s;
 }
 section.offset {
-    transform: translateY(100px);
+    transform: translateY(60px);
 }
 .about{
     padding-top: 70px;
@@ -314,12 +324,14 @@ section.offset {
 }
 
 .skills,
-.portfolio {
-    padding-top: 70px;
+.portfolio,
+.message {
+    margin-top: 60px;
 }
 
 .skills>h2,
-.portfolio>h2 {
+.portfolio>h2,
+.message>h2 {
     text-align: center;
     color: #3d4451;
     font-size: 34px;
@@ -420,4 +432,77 @@ section.offset {
 
 .portfolio .works .right .bottom {
     margin-top: 16px;
+}
+
+.message {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.1;
+    margin-bottom: 0;
+    color: #3d4451;
+}
+.message h2 {
+    text-align: center;
+}
+.message .message-input {
+    display: block;
+    margin-top: 5px;
+}
+.message input {
+    height: 28px;
+    line-height: 1.6;
+    padding: 0 10px;
+    font-size: 14px;
+    color: #333;
+    outline: none;
+    box-shadow: none;
+}
+.message textarea {
+    width: calc(100% - 50px);
+    min-height: 80px;
+    max-height: 200px;
+    padding: 5px 10px;
+    resize: vertical;
+    max-width: 100%;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #333;
+    vertical-align: top;
+    outline: none;
+    box-shadow: none;
+    overflow: visible;
+}
+.message .submit-button {
+    height: 32px;
+    width: 56px;
+    float: right;
+    margin: 10px;
+}
+.message .message-list {
+    width: 100%;
+    margin-top: 36px;
+    max-height: 600px;
+    padding: 30px 20px;
+    overflow: auto;
+    border: 1px solid #bbc;
+    background: #fff;
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
+}
+.message .message-list li {
+    line-height: 28px;
+    font-size: 18px;
+    border-bottom: 1px dashed rgba(224,101,103,0.5);
+    padding: 10px;
+}
+.message .message-list .name {
+    font-weight: 600;
+}
+.message .message-list .content {
+    text-indent: 2em;
+}
+.message-list::-webkit-scrollbar {
+  width: 6px;
+}
+.message-list::-webkit-scrollbar-thumb {
+  border-radius: 3px;
 }
