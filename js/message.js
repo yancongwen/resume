@@ -69,6 +69,14 @@
       let myForm = this.form
       let name = myForm.querySelector('#nameInput').value
       let content = myForm.querySelector('#contentTextarea').value
+      if (!name) {
+        alert('请输入您的昵称！')
+        return
+      }
+      if (!content) {
+        alert('请输入您的留言内容！')
+        return
+      }
       this.model.addData(name, content).then(function(object) {
         let li = document.createElement('li')
         let nameElement = document.createElement('div')
